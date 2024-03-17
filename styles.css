@@ -1,0 +1,203 @@
+
+
+
+header{
+    
+    display:flex;
+    background-color: rgba(40, 40, 40, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+     font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 30px;
+    
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 75px ;
+    
+    
+    
+}
+
+.contact-logo{
+    padding-left: 55px;
+    padding-top: 0px;
+}
+
+.contacts{
+    margin-left: 75px;
+
+    
+}
+
+h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 44px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.benefits{
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+}
+
+.benText{
+    padding-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.top{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+
+.orderTop{
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; /* Налаштування висоти на весь екран */
+  }
+
+.offers{
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center;
+    background-color:rgba(242, 242, 242, 1);
+    width: 1600px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-x: auto; /* Дозволяє горизонтальну прокрутку */
+    white-space: nowrap; /* Забороняє перенесення рядків */
+
+   
+
+}
+
+
+.text-audi, .text-tesla, .text-passat, .text-toyota, .text-ford{
+    
+    border-top: solid;
+}
+
+.audi-main, .tesla-main, .toyota-main, .passat-main, .ford-main{
+    margin-left:10px ;
+    border: solid;
+    transition: box-shadow 0.2s;
+    
+
+}
+
+.tesla-main:hover, .audi-main:hover,.toyota-main:hover, .passat-main:hover, .ford-main:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+h2{
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 1px;
+    display: block;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3px;
+    margin-bottom: 1px;
+    
+
+}
+
+h4{
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    white-space: pre;
+}
+
+
+
+footer{
+    
+    display:flex;
+    background-color: rgba(40, 40, 40, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+     font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 30px;
+    justify-content: center; /* Центрування по горизонталі */
+   
+    
+    
+    
+}
+
+.contact{
+    margin-top: 10px;
+}
+
+.social{
+    display: block;
+    margin-left: 100px;
+    text-align: center;
+}
+
+
+.other{
+    margin-top: 15px;
+    display: block;
+    margin-left: 100px;
+}
+
+#footer-items{
+    font-size: 16px;
+    text-transform: none;
+    display: block;
+    margin-top: 3px;
+    padding: 0%;
+}
+
+
