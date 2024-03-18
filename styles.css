@@ -85,6 +85,10 @@ h1{
 
 }
 
+#logotype{
+    height:85px;
+    width:85px;
+}
 
 .container {
     display: flex;
@@ -95,16 +99,14 @@ h1{
 
 .offers{
     display: flex;
-    justify-content: center; /* Центрування по горизонталі */
+    justify-content: center; 
     align-items: center;
     background-color:rgba(242, 242, 242, 1);
     width: 1600px;
     height: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow-x: auto; /* Дозволяє горизонтальну прокрутку */
-    white-space: nowrap; /* Забороняє перенесення рядків */
-
-   
+    overflow-x: auto; 
+    white-space: nowrap;   
 
 }
 
@@ -144,9 +146,9 @@ h3{
     font-family: 'Montserrat', sans-serif;
     padding-top: 3px;
     margin-bottom: 1px;
-    
-
 }
+
+
 
 h4{
     padding-left: 10px;
@@ -170,10 +172,13 @@ footer{
     padding-left: 30px;
     justify-content: center; /* Центрування по горизонталі */
    
+
     
     
     
 }
+
+
 
 .contact{
     margin-top: 10px;
