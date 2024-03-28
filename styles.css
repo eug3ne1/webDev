@@ -1,9 +1,9 @@
 
 
-
 header{
     
     display:flex;
+    
     background-color: rgba(40, 40, 40, 1);
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -16,6 +16,18 @@ header{
     
     
 }
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: 500px; /* Мінімальна висота контейнера - висота екрану */
+                }
+
+    
+        
+
+        
+        }
 
 a {
     text-decoration: none;
@@ -53,6 +65,7 @@ h1{
     display: flex;
     justify-content: center; /* Центрування по горизонталі */
     align-items: center; /* Центрування по вертикалі */
+    flex-wrap: wrap;   
 }
 
 .benText{
@@ -106,7 +119,8 @@ h1{
     height: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow-x: auto; 
-    white-space: nowrap;   
+    white-space: nowrap;
+    flex-wrap: wrap;   
 
 }
 
