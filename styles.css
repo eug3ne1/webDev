@@ -59,7 +59,8 @@ header{
                 flex-direction:block;
                 height: 340px;
                 align-items:center;
-                padding-left: 0px;
+                padding-right: 100px;
+                
         
                     }
                 #logotype{
@@ -71,7 +72,7 @@ header{
 
                 .contact-logo{
                     margin-top: 20px;
-                    margin-left: 20px;
+                    margin-left: 35px;
                 }
 
               #head-text{
@@ -95,21 +96,22 @@ header{
         
                 }
                 .contacts{
-                    margin-right: 50px;
+                    margin-right: 100px;
                 }
 
                 .social{
-                    margin-right: 50px;
+                    margin-right: 100px;
                 }
 
                 .other{
-                    margin-right: 50px;
+                    margin-right: 100px;
 
                 }
 
                 #photo-footer{
+
                     margin-top: 30px;
-                    margin-right: 50px;
+                    margin-right: 100px;
 
                 }
         
