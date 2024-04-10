@@ -17,17 +17,108 @@ header{
     
 }
 
-@media (max-width: 800px) {
+#logotype {
+    height: 100%; /* Змініть на відсоткове значення */
+    width: auto; /* Автоматична ширина */
+    max-height: 85px; /* Максимальна висота, якщо потрібно */
+    max-width: 85px; /* Максимальна ширина, якщо потрібно */
+}
+
+@media screen and (max-width: 1200px) {
     header {
         flex-direction: column;
-        height: 500px; /* Мінімальна висота контейнера - висота екрану */
-                }
+        height: 500px;
+        align-items: center;
 
-    
-        
+            }
+        #logotype{
+            width: 60px;
+            height: 60px;
+            margin-left: 50px;
+            
+        }
+
+      
+
+
+        footer{
+            margin-top: 100px;
+            flex-direction: column;
+            height: 400px;
+            align-items: center;
+            font-size: 14px;
+            align-items: center;
+
+        }
 
         
         }
+
+        @media screen and (max-width: 750px) {
+            header {
+                flex-direction:block;
+                height: 340px;
+                align-items:center;
+                padding-left: 0px;
+        
+                    }
+                #logotype{
+                    width: 45px;
+                    height: 45px;
+                    margin-left: 70px;
+                    
+                }
+
+                .contact-logo{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                }
+
+              #head-text{
+                font-size: 14px;
+                margin-top: 1px;
+              }
+
+              h1{
+                font-size: 10px;
+                
+              }
+        
+        
+                footer{
+                    margin-top: 100px;
+                    flex-direction: column;
+                    height: 400px;
+                    align-items: center;
+                    font-size: 14px;
+                    align-items: center;
+        
+                }
+                .contacts{
+                    margin-right: 50px;
+                }
+
+                .social{
+                    margin-right: 50px;
+                }
+
+                .other{
+                    margin-right: 50px;
+
+                }
+
+                #photo-footer{
+                    margin-top: 30px;
+                    margin-right: 50px;
+
+                }
+        
+                
+                }
+        
+
+
+        
 
 a {
     text-decoration: none;
@@ -41,6 +132,11 @@ a {
     
     
     
+}
+
+.fit-picture{
+    height : 250px;
+    width:350px;
 }
 
 .contact-logo{
@@ -98,10 +194,7 @@ h1{
 
 }
 
-#logotype{
-    height:85px;
-    width:85px;
-}
+
 
 .container {
     display: flex;
@@ -122,6 +215,12 @@ h1{
     white-space: nowrap;
     flex-wrap: wrap;   
 
+}
+
+#photo-footer{
+    margin-left: 100px;
+    height: 85px;
+    width: 85px;
 }
 
 
@@ -181,7 +280,7 @@ footer{
     text-decoration: none;
      font-family: 'Inter', sans-serif;
     font-weight: bold;
-    height: 150px;
+    
     padding-top: 10px;
     padding-left: 30px;
     justify-content: center; /* Центрування по горизонталі */
@@ -214,7 +313,7 @@ footer{
 #footer-items{
     font-size: 16px;
     text-transform: none;
-    display: block;
+ 
     margin-top: 3px;
     padding: 0%;
 }
