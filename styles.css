@@ -321,3 +321,23 @@ footer{
 }
 
 
+.toggleImage {
+    cursor: pointer; /* Зміна вигляду курсору при наведенні на зображення */
+    transition: transform 0.3s ease; /* Плавний перехід для зображення */
+}
+.toggleImage.rotate{
+    transform: scaleY(-1);
+}
+
+.car {
+    position: relative;
+    bottom: -300px; /* Початкове положення машин у нижній частині екрану */
+    opacity: 0; /* Початкова прозорість - машини невидимі */
+    transition: bottom 0.9s ease, opacity 0.9s ease; /* Плавні переходи */
+}
+
+.car.show {
+    bottom: 0; /* Поступове зміщення машин вгору */
+    opacity: 1; /* Поступове збільшення прозорості - машини з'являються */
+}
+
