@@ -74,6 +74,8 @@
 
     <div class="container">
         <div class="offers">
+
+
         
 
 
@@ -152,6 +154,12 @@
               
     
                 </div>
+
+             
+
+
+                
+
                 
         </div>
 
@@ -173,20 +181,28 @@
 
         document.addEventListener("DOMContentLoaded", function() {
         const cars = document.querySelectorAll(".car");
+       
 
         cars.forEach(function(car) {
             car.classList.add("show"); // Додаємо клас, щоб машини з'явилися при завантаженні
         });
+
+      
+
     });
 
       const cars = document.querySelectorAll(".car");
+      const cars2 = document.querySelectorAll(".test");
       document.addEventListener("DOMContentLoaded", function() {
         const toggleButton = document.getElementById("toggleButton");
 
     toggleButton.addEventListener("click", function() {
         cars.forEach(function(car) {
             car.classList.toggle("show"); // Перемикаємо клас, який відповідає за відображення блоку
+
         });
+
+
         // Перевертаємо зображення при кожному кліку
 
         toggleButton.classList.toggle("rotate");

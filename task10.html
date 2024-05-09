@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create and Destroy Boxes</title>
+<style>
+  #boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #000;
+  }
+</style>
+</head>
+<body>
+  <div id="controls">
+    <input type="number" min="1" max="100" step="1" />
+    <button type="button" data-create>Create</button>
+    <button type="button" data-destroy>Destroy</button>
+  </div>
+
+  <div id="boxes"></div>
+
+  <script>
+    // Функція для генерації випадкового кольору в HEX форматі
+    function getRandomHexColor() {
+      return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+    }
+
+       // Отримуємо кнопки та інпут
+    const createBtn = document.querySelector('[data-create]');
+    const destroyBtn = document.querySelector('[data-destroy]');
+    const input = document.querySelector('input');
+
+    // Обробник події для кнопки Create
+    createBtn.addEventListener('click', () => {
+      const amount = parseInt(input.value); // Отримання кількості
+      if (amount > 0 && amount <= 100) { // Перевірка на валідність
+        createBoxes(amount); // Створення колекції
+        input.value = ''; // Очищення інпуту
+      } else {
+        alert('Please enter a number between 1 and 100.');
+      }
+    });
+
+    // Функція для створення колекції елементів
+    function createBoxes(amount) {
+      const boxesContainer = document.getElementById('boxes');
+      for (let i = 0; i < amount; i++) {
+        const box = document.createElement('div');
+        box.classList.add('box');
+        box.style.width = `${30 + i * 10}px`; // Зміна ширини
+        box.style.height = `${30 + i * 10}px`; // Зміна висоти
+        box.style.backgroundColor = getRandomHexColor(); // Випадковий колір
+        boxesContainer.appendChild(box);
+      }
+    }
+
+    // Функція для очищення колекції елементів
+    function destroyBoxes() {
+      const boxesContainer = document.getElementById('boxes');
+      boxesContainer.innerHTML = ''; // Очищення вмісту
+    }
+
+ 
+
+    // Обробник події для кнопки Destroy
+    destroyBtn.addEventListener('click', () => {
+      destroyBoxes(); // Очищення колекції
+    });
+  </script>
+</body>
+</html>
